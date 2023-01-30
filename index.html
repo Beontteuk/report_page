@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/title.css">
+    <link rel="stylesheet" href="./css/semi_title.css">
+    <link rel="stylesheet" href="./css/profile_img.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/review_box.css">
+    <link rel="stylesheet" href="./css/report_reason_title.css">
+    <link rel="stylesheet" href="./css/warning_message.css">
+    <link rel="stylesheet" href="./css/write_button.css">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body class="font_default_set">
+    <div id="title" class="font_size_24 font_weight_bold">
+        신고하기
+    </div>
+
+    <div id="semi_title" class="font_size_16 font_weight_bold">
+        신고할 유저
+    </div>
+
+    <div id="profile">
+        <span id="profile_img_wrapper">
+            <span class="profile_img">
+                <div class="profile_img_border">
+                    <img class="profile_original_img" src="./img/test_profile.png">
+                </div>
+            </span>
+        </span>
+        <span id="profile_info" class="font_default_set">
+            <span id="profile_info_up_side" class="font_size_20 font_weight_bold">
+                <span id="nickname">
+                    침착한 비버
+                </span>
+                <span id="right_arrow_icon">
+                    <img src="img/icon_arrow_right.svg">
+                </span>
+            </span>
+            <span id="join_date" class="font_size_14 font_color_grey font_weight_regular">
+                가입일 2023. 01. 24
+            </span>
+        </span>
+    </div>
+
+    <div id="report_reason_title" class="font_size_16 font_weight_bold">
+        신고 사유
+    </div>
+
+
+    <div>
+        <div id="text_input_box">
+            <textarea id="review_textarea" type="text" name="review"
+                placeholder="신고할 사유를 입력해 주세요. (불법 거래, 사실과 다른 설명, 내공 냠냠 등)"></textarea>
+        </div>
+    </div>
+
+    <div id="warning_message" class="font_color_red">
+        사실과 다른 정보로 허위 신고를 할 경우 제재 및 처벌의 대상이 될 수 있습니다.
+    </div>
+
+    <div id="write_button_position">
+        <div id="write_button_wrapper">
+            <div id="write_button">
+                <div id="button_text" onclick="MessageInvoker.postMessage('writeReport');">
+                    신고하기
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
